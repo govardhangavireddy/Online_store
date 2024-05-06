@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="cart.js"></script>
+</head>
+
+<body>
+    <div class="items">
+        <h1>Furniture</h1>
+    </div>
+    <div class="products-container">
+        <div class="title">
+            <h1>Dinning Sets</h1>
+        </div>
+        <div class="products">
+            <div class="product">
+                <img id="se" src="furniture/dinning1.jpeg" height="200px" alt="Dinning set 1">
+                <h3>Dinning Set 1</h3>
+                <p>Price: $450</p>
+                <button onclick="addtoCart('Dinning Set 1','450')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="furniture/dinning2.jpeg" height="200px" alt="Dinning Set 2">
+                <h3>Dinning set 2</h3>
+                <p>Price: $500</p>
+                <button onclick="addtoCart('Dinning Set 2','500')">Add to Cart</button>
+            </div>
+        </div>
+        <div class="title">
+            <h1>Sofa Sets</h1>
+        </div>
+        <div class="products">
+            <div class="product">
+                <img src="furniture/sofa1.jpeg" height="200px" alt="Sofa Set 1">
+                <h3>Sofa Set 1</h3>
+                <p>Price: $300</p>
+                <button onclick="addtoCart('Sofa Set 1','300')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="furniture/sofa 2.jpeg" height="200px" alt="Sofa Set 2">
+                <h3>Sofa Set 2</h3>
+                <p>Price: $320</p>
+                <button onclick="addtoCart('Sofa Set 2','320')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="cart">
+        <h1>CART</h1>
+        <ul id="cart">
+
+        </ul>
+        <div id="total">
+            <h3>Total: $0</h3>
+        </div>
+        <button onclick="checkout()">Checkout</button>
+
+    </div>
+    <div class="nav-bar">
+        <div class="nav-link">
+            <a href="Homepage.html">Back to Home</a>
+        </div>
+        <div class="nav-link">
+            <a href="book.html">Books</a>
+        </div>
+        <div class="nav-link">
+            <a href="electronic.html">Electronics</a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2021 Online Store</p>
+    </div>
+</body>
+
+</html>

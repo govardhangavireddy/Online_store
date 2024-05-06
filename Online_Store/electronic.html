@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics</title>
+    <link rel="stylesheet" href="style.css" >
+    <script src="cart.js"></script>
+</head>
+
+<body>
+    <div class="items">
+        <h1>Electronics</h1>
+    </div>
+    <div class="products-container">
+        <div class="title">
+            <h1>iPhones</h1>
+        </div>
+        <div class="products">
+            <div class="product">
+                <img src="electronics/iphonese.jpeg" height="200px" alt="iphone se">
+                <h3>iPhone SE</h3>
+                <p>Price: $800</p>
+                <button onclick="addtoCart('iPhone SE','800')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="electronics/iphone8.jpeg" height="200px" alt="iphone 8plus">
+                <h3>iPhone 8 Plus</h3>
+                <p>Price: $900</p>
+                <button onclick="addtoCart('iPhone 8','900')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="electronics/iphone14.jpeg" height="200px" alt="iphone 14">
+                <h3>iPhone14</h3>
+                <p>Price: $1000</p>
+                <button onclick="addtoCart('iPhone 14','1000')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="electronics/iphone15.jpeg" height="200px" alt="iphone 15">
+                <h3>iPhone15</h3>
+                <p>Price: $1200</p>
+                <button onclick="addtoCart('iPhone 15','1200')">Add to Cart</button>
+            </div>
+        </div>
+        <div class="title">
+            <h1>Macbooks</h1>
+        </div>
+        <div class="products">
+            <div class="product">
+                <img src="electronics/m1.jpeg" height="200px" alt="laptop">
+                <h3>Mac m1</h3>
+                <p>Price: $999</p>
+                <button onclick="addtoCart('Mac M1','999')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="electronics/m2.jpeg" height="200px" alt="macbook pro">
+                <h3>Mac m2</h3>
+                <p>Price: $1099</p>
+                <button onclick="addtoCart('Mac M2','1099')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="electronics/m3.jpeg" height="200px" alt="macbook air">
+                <h3>Mac m3</h3>
+                <p>Price: $1199</p>
+                <button onclick="addtoCart('Mac M3','1199')">Add to Cart</button>
+            </div>
+        </div>
+        <div class="title">
+            <h1>AirPods</h1>
+        </div>
+        <div class="products">
+            <div class="product">
+                <img src="electronics/gen2.jpeg" height="200px" width="170px" alt="AirPods 2">
+                <h3>AirPods Gen 2</h3>
+                <p>Price: $600</p>
+                <button onclick="addtoCart('AirPods Gen 2','600')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="electronics/gen3.jpeg" height="200px" alt="AirPods 3">
+                <h3>AirPods Gen 3</h3>
+                <p>Price: $700</p>
+                <button onclick="addtoCart('AirPods Gen 3','700')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="electronics/pro.jpeg" height="200px" alt="AirPods Pro">
+                <h3>AirPods Pro</h3>
+                <p>Price: $800</p>
+                <button onclick="addtoCart('AirPods Pro','800')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="electronics/max.jpeg" height="200px" alt="AirPods Max">
+                <h3>AirPods Max</h3>
+                <p>Price: $900</p>
+                <button onclick="addtoCart('AirPods Max','900')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="cart">
+        <h1>CART</h1>
+        <ul id="cart">
+
+        </ul>
+        <div id="total">
+            <h3>Total: $0</h3>
+        </div>
+        <button onclick="checkout()">Checkout</button>
+
+    </div>
+    <div class="nav-bar">
+        <div class="nav-link">
+            <a href="Homepage.html">Back to Home</a>
+        </div>
+        <div class="nav-link">
+            <a href="electronic.html">Electronics</a>
+        </div>
+        <div class="nav-link">
+            <a href="book.html">Books</a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2021 Online Store</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .items{
+            text-align: center;
+            background: rgb(67, 1, 1);
+            color: antiquewhite;
+        }
+
+        .products-container {
+            margin-top: 30px;
+            justify-content: center;
+        }
+
+        .products {
+            display: flex;
+            margin: 10px 100px 10px 100px;
+            justify-content: center;
+        }
+
+        .product {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .title {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .nav-bar {
+            font-size: 22px;
+            margin-top: 10px;
+            justify-content: center;
+            color: antiquewhite;
+            background: rgb(67, 1, 1);
+            display: flex;
+        }
+
+        .nav-link {
+            margin: 0 100px 0 100px;
+        }
+
+        .nav-link a:hover {
+            background: antiquewhite;
+            color: rgb(67, 1, 1);
+        }
+
+        a {
+            color: antiquewhite;
+            text-decoration: none;
+        }
+
+        button {
+            background: rgb(67, 1, 1);
+            color: antiquewhite;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .footer {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            background: rgb(67, 1, 1);
+            color: antiquewhite;
+            text-align: center;
+        }
+        .cart{
+            position:relative;
+            background: rgb(67, 1, 1);
+            color: antiquewhite;
+            text-align: center;
+        }
+        #cart{
+            margin: 10px;
+        }
+    </style>
+    <script src="cart.js"></script>
+</head>
+
+<body>
+    <div class="items">
+        <h1>BOOKS</h1>
+    </div>
+    <div class="products-container">
+        <div class="title">
+            <h1>Thiller Mystery</h1>
+        </div>
+        <div class="products">
+            <div class="product">
+                <img src="books/gonegirl.jpeg" height="200px" alt="gone girl">
+                <h3>Gone Girl</h3>
+                <p>Price: $50</p>
+                <button onclick="addtoCart('Gone Girl','50')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="books/fc.jpeg" height="200px" alt="Fight Club">
+                <h3>Fight Club</h3>
+                <p>Price: $70</p>
+                <button onclick="addtoCart('Fight Club','70')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="books/ac.jpeg" height="200px" alt="American Psycho">
+                <h3>American Psycho</h3>
+                <p>Price: $90</p>
+                <button onclick="addtoCart('American Psycho','90')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="books/sh.jpeg" height="200px" alt="Shutter Island">
+                <h3>Shutter Island</h3>
+                <p>Price: $60</p>
+                <button onclick="addtoCart('Shutter Island','60')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="books/if.jpeg" height="200px" alt="If She Knew">
+                <h3>If She Knew</h3>
+                <p>Price: $40</p>
+                <button onclick="addtoCart('If She Knew','40')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="books/silent.jpeg" height="200px" alt="Silent Patient">
+                <h3>Shutter Island</h3>
+                <p>Price: $60</p>
+                <button onclick="addtoCart('Silent Patient','60')">Add to Cart</button>
+            </div>
+        </div>
+        <div class="title">
+            <h1>Spiritual</h1>
+        </div>
+        <div class="products">
+            <div class="product">
+                <img src="books/tri.jpeg" height="200px" alt="The Shiva Trilogy">
+                <h3>The Shiva Trilogy</h3>
+                <p>Price: $200</p>
+                <button onclick="addtoCart('The Shiva Trilogy','200')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="books/shiva.jpeg" height="200px" alt="Yogic Secrets">
+                <h3>Yogic Secrets</h3>
+                <p>Price: $90</p>
+                <button onclick="addtoCart('Yogic Secrets','90')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="books/vishnu.jpeg" height="200px" alt="Vishnu">
+                <h3>Vishnu</h3>
+                <p>Price: $90</p>
+                <button onclick="addtoCart('Vishnu','90')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="books/gita.jpeg" height="200px" alt="Bhagavad-Gita">
+                <h3>Bhagavad-Gita</h3>
+                <p>Price: $110</p>
+                <button onclick="addtoCart('Bhagavad-Gita','110')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="books/rama.jpeg" height="200px" alt="Ramayanam">
+                <h3>Ramayanam</h3>
+                <p>Price: $95</p>
+                <button onclick="addtoCart('Ramayanam','95')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="books/myth.jpeg" height="200px" alt="Hindu Mythology">
+                <h3>Hindu Mythology</h3>
+                <p>Price: $70</p>
+                <button onclick="addtoCart('Hindu Mythology','70')">Add to Cart</button>
+            </div>
+        </div>
+        <div class="title">
+            <h1>Fictional</h1>
+        </div>
+        <div class="products">
+            <div class="product">
+                <img src="books/rings.jpeg" height="200px" alt="The Lord of the Rings">
+                <h3>The Lord of the Rings</h3>
+                <p>Price: $60</p>
+                <button onclick="addtoCart('The Lord of the Rings','60')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="books/potter.jpeg" height="200px" alt="Harry Potter">
+                <h3>Harry Potter</h3>
+                <p>Price: $70</p>
+                <button onclick="addtoCart('Harry Potter','80')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="books/woman.webp" height="200px" alt="The Woman">
+                <h3>The Woman</h3>
+                <p>Price: $40</p>
+                <button onclick="addtoCart('The Woman','40')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="books/world.jpeg" height="200px" alt="The Lost World">
+                <h3>The Lost World</h3>
+                <p>Price: $60</p>
+                <button onclick="addtoCart('The Lost World','60')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="books/dark.jpeg" height="200px" alt="A Flicker in the Dark">
+                <h3>A Flicker in the Dark</h3>
+                <p>Price: $50</p>
+                <button onclick="addtoCart('A Flicker in the Dark','50')">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="books/hunger.jpeg" height="200px" alt="The Hunger Games">
+                <h3>The Hunger Games</h3>
+                <p>Price: $60</p>
+                <button onclick="addtoCart('The Hunger Games','60')">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <div class="cart">
+        <h1>CART</h1>
+        <ul id="cart">
+
+        </ul>
+        <div id="total">
+            <h3>Total: $0</h3>
+        </div>
+        <button onclick="checkout()">Checkout</button>
+
+    </div>
+    <div class="nav-bar">
+        <div class="nav-link">
+            <a href="Homepage.html">Back to Home</a>
+        </div>
+        <div class="nav-link">
+            <a href="book.html">Books</a>
+        </div>
+        <div class="nav-link">
+            <a href="fashion.html">Fashion</a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2021 Online Store</p>
+    </div>
+</body>
+
+</html>
